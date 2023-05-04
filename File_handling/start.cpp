@@ -1,22 +1,20 @@
+
 #include <iostream>
 #include <fstream>
-using namespace std;
-
-int main() {
-    int count = 0;
-    char c;
-    ifstream fin("MyFile.txt");
-    if (!fin) {
-        cout << "File Does not Exist";
-        return 0;
-    }
-    while (fin.get(c)) {
-        cout << c;
-        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-            count++;
-        }
-    }
-    fin.close();
-    cout << endl << "count is " << count;
-    return 0;
+   using namespace std;
+   int main()
+   {
+   ifstream in("MyFile.txt");
+   if(!in) {
+   cout << "Cannot open file.\n";
+  return 1;
 }
+  in.ignore(10, '\t');
+ char c;
+  while(in) {
+   in.get(c);
+  if(in) cout << c;
+  }
+  in.close();
+  return 0;
+  }
