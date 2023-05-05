@@ -21,13 +21,16 @@ class minute{
     public:
     int onlyminute;
 
-    minute
-
+    minute(){}
+    void display(){
+        cout<<"total minutes : "<<onlyminute;
+    } 
 };
 
 int main(){
+
     time t1(1,20);
     minute m1;
     m1=t1;
-    m1.display;
+    m1.display();
 }
