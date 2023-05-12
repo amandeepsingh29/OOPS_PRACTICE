@@ -1,1 +1,1 @@
-cd "c:\Users\Amandeep Singh\Documents\GitHub\OOPS_PRACTICE\File_handling\" ; if ($?) { g++ reading.cpp -o reading } ; if ($?) { .\reading }
+hello Amandeep.

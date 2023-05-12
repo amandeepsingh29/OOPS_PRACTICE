@@ -18,7 +18,7 @@ getline(cin,name);
 cout<<name<<" printed to MyFile.txt";
 datafile<<name;
 
-
+datafile.close();
 
 
 
